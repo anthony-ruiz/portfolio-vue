@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import WorkLocationDetails from "../views/WorkLocationDetails.vue";
+import ProjectDetails from "../views/ProjectDetails.vue";
 import WorkExperince from "../views/WorkExperince.vue";
 
 Vue.use(VueRouter);
@@ -22,6 +23,12 @@ const routes = [
     path: "/work-location/:id",
     name: "Work Location",
     component: WorkLocationDetails,
+    props: true,
+  },
+  {
+    path: "/project-details/:id",
+    name: "Project Details",
+    component: ProjectDetails,
     props: true,
   },
   {

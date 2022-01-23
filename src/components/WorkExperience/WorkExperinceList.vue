@@ -2,7 +2,7 @@
   <div>
     <h1>Work Experience:</h1>
     <ul>
-      <info-card
+      <WorkExperieceInfoCard
         v-for="location in $store.state.locations"
         :key="location.id"
         :location="location"
@@ -12,24 +12,20 @@
 </template>
 
 <script>
-import InfoCard from "./InfoCard.vue";
+import WorkExperieceInfoCard from "./WorkExpericeInfoCard.vue";
 export default {
   components: {
-    InfoCard,
+    WorkExperieceInfoCard,
   },
 };
 </script>
 
 <style scoped>
-/* this is the for the title of component */
-h1 {
-  text-align: center;
-}
 /* this is for the grid of work Locations */
 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   list-style-type: none;
 }
 </style>

@@ -36,9 +36,7 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
   grid-gap: 2rem;
   list-style-type: none;
-}
-h1 {
-  text-align: center;
+  justify-content: center;
 }
 .caption {
   width: 100%;

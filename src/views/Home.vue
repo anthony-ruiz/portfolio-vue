@@ -1,21 +1,24 @@
 <template>
-  <div class="about">
+  <div class="home">
     <WorkExperinceList />
+    <ProjectList />
   </div>
 </template>
 
 <script>
-import WorkExperinceList from "@/components/WorkExperinceList.vue";
-
+import WorkExperinceList from "@/components/WorkExperience/WorkExperinceList.vue";
+import ProjectList from "@/components/Project/ProjectList.vue";
 export default {
   components: {
     WorkExperinceList,
+    ProjectList,
   },
 };
 </script>
 
-<style scoped>
-.about {
+<style>
+.home {
   padding: 1rem;
+  text-align: center;
 }
 </style>

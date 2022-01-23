@@ -1,20 +1,20 @@
 <template>
   <router-link
-    class="info-link"
+    class="info-card-link"
     :to="{ name: 'Work Location', params: { id: location.id } }"
   >
     <li class="info-card -shadow">
       <figure>
         <img
-          :src="require(`../assets/${location.CompanyLogo}`)"
+          :src="require(`@/assets/${location.CompanyLogo}`)"
           alt="Work Location Logo"
         />
         <figcaption>
           <h3>{{ location.CompanyName }}</h3>
         </figcaption>
       </figure>
-      <h5>{{ "from " + location.StartDate + " to " + location.EndDate }}</h5>
       <h4>{{ location.RoleTitle }}</h4>
+      <h5>{{ "from " + location.StartDate + " to " + location.EndDate }}</h5>
     </li>
   </router-link>
 </template>
@@ -33,6 +33,7 @@ export default {
   border-radius: 0.5rem;
   margin: 1rem;
 }
+
 .info-card:hover {
   transform: scale(1.01);
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
@@ -57,7 +58,7 @@ export default {
   width: 100%;
 }
 
-figcaption > h3 {
+.info-card figure h3 {
   color: white;
   padding: 0.75rem;
   font-size: 1.25rem;
@@ -66,8 +67,14 @@ figcaption > h3 {
 .info-card > .title {
   margin: 0;
 }
+
 /* color of text in the card */
-.info-link {
+.info-card-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 100;
+}
+.info-card-link:hover {
   color: black;
   text-decoration: none;
   font-weight: 100;
