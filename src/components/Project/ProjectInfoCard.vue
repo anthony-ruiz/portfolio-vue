@@ -10,10 +10,8 @@
             :src="require(`@/assets/projects/${project.image}`)"
             alt="Project Image"
           />
-          <figcaption>
-            <h3>{{ project.name }}</h3>
-          </figcaption>
         </figure>
+        <h3 class="project-name">{{ project.name }}</h3>
       </div>
     </router-link>
   </div>
@@ -39,6 +37,11 @@ export default {
 .wholecard {
   border: 1px solid #e2e2e2;
   border-radius: 0.5rem;
+  height: 15rem;
+  overflow: hidden;
+}
+.wholecard.spantwo {
+  height: 31rem;
 }
 
 .wholecard:hover {
@@ -47,7 +50,7 @@ export default {
 }
 
 .info-card figure {
-  max-height: 200px;
+  max-height: 100%;
   overflow: hidden;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -60,9 +63,9 @@ export default {
   object-fit: cover;
 }
 
-.info-card figure figcaption {
+.info-card project-name {
   position: absolute;
-  bottom: 0;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
 }

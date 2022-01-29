@@ -26,5 +26,6 @@ export default {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
   grid-auto-rows: 1fr;
+  padding: 1rem;
 }
 </style>
