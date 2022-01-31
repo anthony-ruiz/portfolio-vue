@@ -57,6 +57,7 @@ export default new Vuex.Store({
           "CSS",
         ],
         image: "covid-image.png",
+        imageBanner: "covid-banner.png",
         gitHubLink: "https://github.com/anthony-ruiz/COVID-Dashboard",
       },
       {
@@ -73,6 +74,7 @@ export default new Vuex.Store({
           "CSS",
         ],
         image: "redistricting-image.png",
+        imageBanner: "redistricting-banner.png",
         gitHubLink: "https://github.com/anthony-ruiz/Redistricting-simulator",
       },
       {
@@ -82,6 +84,7 @@ export default new Vuex.Store({
           "Allows a user to create a workout and track their different workouts. The User has the ability to choose from a list of exercises and input the weight used and reps performed on each of their sets. It was developed using a MVVM design pattern. It utilizes LiteSQL and Room as the persistence layer, taking advantage of two-way data binding to update and store the data.",
         toolsUsed: ["Kotlin", "Room", "SQLite"],
         image: "fitness-tracker-image.png",
+        imageBanner: "fitness-banner.png",
         gitHubLink: "https://github.com/anthony-ruiz/my-workout-tracker",
       },
     ],

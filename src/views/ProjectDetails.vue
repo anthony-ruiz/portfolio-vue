@@ -2,7 +2,9 @@
   <div>
     <v-img
       max-height="300"
-      :src="require(`../assets/projects/${currentProject(Number(id)).image}`)"
+      :src="
+        require(`../assets/projects/${currentProject(Number(id)).imageBanner}`)
+      "
     ></v-img>
     <div class="work-detials -shadow">
       <h1>{{ currentProject(Number(id)).name }}</h1>
