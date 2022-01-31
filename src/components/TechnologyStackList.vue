@@ -2,7 +2,7 @@
   <div class="technology-stack">
     <h1>Technologies Used</h1>
     <ul>
-      <li v-for="item in mylocation(id).TechnologyUsed" :key="item">
+      <li v-for="item in techList" :key="item">
         <v-img
           max-height="300"
           :src="require(`../assets/technology-logos/${item}-logo.svg`)"
@@ -15,12 +15,7 @@
 <script>
 export default {
   props: {
-    id: Number,
-  },
-  computed: {
-    mylocation() {
-      return this.$store.getters.getWorkLocationById;
-    },
+    techList: Array,
   },
 };
 </script>
@@ -37,6 +32,10 @@ ul {
   grid-gap: 2rem;
   list-style-type: none;
   justify-content: center;
+}
+li,
+h1 {
+  text-align: center;
 }
 .caption {
   width: 100%;

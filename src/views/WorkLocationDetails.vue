@@ -15,7 +15,7 @@
         <h3>{{ mylocation(id).RoleTitle }}</h3>
       </div>
       <p>{{ mylocation(id).JobDescription }}</p>
-      <TechnologyStackList :id="id" />
+      <TechnologyStackList :techList="mylocation(id).TechnologyUsed" />
     </div>
   </div>
 </template>

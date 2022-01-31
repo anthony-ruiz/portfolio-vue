@@ -2,18 +2,12 @@
   <div>
     <v-img
       max-height="300"
-      :src="require(`../assets/${mylocation(id).BackgroundImage}`)"
+      :src="require(`../assets/projects/${currentProject(id).image}`)"
     ></v-img>
     <div class="work-detials -shadow">
-      <h1>{{ mylocation(id).CompanyName }}</h1>
-      <h4>
-        {{
-          "from " + mylocation(id).StartDate + " to " + mylocation(id).EndDate
-        }}
-      </h4>
-      <h3>{{ mylocation(id).RoleTitle }}</h3>
-      <p>{{ mylocation(id).JobDescription }}</p>
-      <TechnologyStackList :id="id" />
+      <h1>{{ currentProject(id).name }}</h1>
+      <p>{{ currentProject(id).description }}</p>
+      <TechnologyStackList :techList="currentProject(id).toolsUsed" />
     </div>
   </div>
 </template>
@@ -28,8 +22,8 @@ export default {
     TechnologyStackList,
   },
   computed: {
-    mylocation() {
-      return this.$store.getters.getWorkLocationById;
+    currentProject() {
+      return this.$store.getters.getProjectById;
     },
   },
 };
@@ -44,5 +38,8 @@ export default {
   width: 70%;
   padding: 3rem;
   position: relative;
+}
+h1 {
+  text-align: center;
 }
 </style>
