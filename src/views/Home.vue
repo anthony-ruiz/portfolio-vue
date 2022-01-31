@@ -21,4 +21,7 @@ export default {
   padding: 1rem;
   text-align: center;
 }
+.home > * {
+  padding-top: 4rem;
+}
 </style>

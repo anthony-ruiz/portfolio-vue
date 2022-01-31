@@ -23,8 +23,12 @@ export default {
 <style scoped>
 /* this is for the grid of work Locations */
 ul {
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  width: min(95%, 90rem);
   grid-gap: 2rem;
   list-style-type: none;
 }

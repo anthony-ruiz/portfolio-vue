@@ -31,7 +31,6 @@ export default {
 .info-card {
   border: 1px solid #e2e2e2;
   border-radius: 0.5rem;
-  margin: 1rem;
 }
 
 .info-card:hover {

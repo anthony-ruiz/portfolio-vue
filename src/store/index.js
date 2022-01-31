@@ -60,14 +60,6 @@ export default new Vuex.Store({
       },
       {
         id: 2,
-        name: "Fitness Tracking Android Application",
-        description:
-          "Allows a user to create a workout and track their different workouts. The User has the ability to choose from a list of exercises and input the weight used and reps performed on each of their sets. It was developed using a MVVM design pattern. It utilizes LiteSQL and Room as the persistence layer, taking advantage of two-way data binding to update and store the data.",
-        toolsUsed: ["Kotlin", "Room", "LiteSQL"],
-        image: "fitness-tracker-image.png",
-      },
-      {
-        id: 3,
         name: "Political Fairness Congressional District Generator",
         description:
           "Designed and developed a system that automatically generates congressional districts via region growing algorithm in order to maximize political fairness. Utilized Java, JavaScript, Hibernate, Spring Boot, and Amazon Web Services.",
@@ -80,6 +72,14 @@ export default new Vuex.Store({
           "CSS",
         ],
         image: "redistricting-image.png",
+      },
+      {
+        id: 3,
+        name: "Fitness Tracking Android Application",
+        description:
+          "Allows a user to create a workout and track their different workouts. The User has the ability to choose from a list of exercises and input the weight used and reps performed on each of their sets. It was developed using a MVVM design pattern. It utilizes LiteSQL and Room as the persistence layer, taking advantage of two-way data binding to update and store the data.",
+        toolsUsed: ["Kotlin", "Room", "LiteSQL"],
+        image: "fitness-tracker-image.png",
       },
     ],
   },

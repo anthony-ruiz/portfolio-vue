@@ -23,9 +23,28 @@ export default {
 <style scoped>
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
-  grid-auto-rows: 1fr;
-  padding: 1rem;
+  grid-gap: 2rem;
+  grid-template-areas:
+    "one"
+    "two"
+    "three";
+
+  padding-block: 2rem;
+  width: min(95%, 90rem);
+  margin-inline: auto;
+}
+
+@media (min-width: 720px) {
+  .project-grid {
+    grid-template-areas:
+      "one two"
+      "three four";
+  }
+}
+
+@media (min-width: 1281px) {
+  .project-grid {
+    grid-template-areas: "one two three";
+  }
 }
 </style>
