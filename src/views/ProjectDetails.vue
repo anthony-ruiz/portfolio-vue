@@ -7,6 +7,13 @@
     <div class="work-detials -shadow">
       <h1>{{ currentProject(id).name }}</h1>
       <p>{{ currentProject(id).description }}</p>
+      <a :href="currentProject(id).gitHubLink">
+        <img
+          class="gitHubLogo"
+          alt="GitHub Logo"
+          :src="require(`../assets/technology-logos/github-logo.png`)"
+        />
+      </a>
       <TechnologyStackList :techList="currentProject(id).toolsUsed" />
     </div>
   </div>
@@ -38,6 +45,17 @@ export default {
   width: 70%;
   padding: 3rem;
   position: relative;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7rem;
+}
+img:hover {
+  transform: scale(1.01);
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
 }
 h1 {
   text-align: center;
