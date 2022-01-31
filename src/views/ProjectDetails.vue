@@ -2,19 +2,19 @@
   <div>
     <v-img
       max-height="300"
-      :src="require(`../assets/projects/${currentProject(id).image}`)"
+      :src="require(`../assets/projects/${currentProject(Number(id)).image}`)"
     ></v-img>
     <div class="work-detials -shadow">
-      <h1>{{ currentProject(id).name }}</h1>
-      <p>{{ currentProject(id).description }}</p>
-      <a :href="currentProject(id).gitHubLink">
+      <h1>{{ currentProject(Number(id)).name }}</h1>
+      <p>{{ currentProject(Number(id)).description }}</p>
+      <a :href="currentProject(Number(id)).gitHubLink">
         <img
           class="gitHubLogo"
           alt="GitHub Logo"
           :src="require(`../assets/technology-logos/github-logo.png`)"
         />
       </a>
-      <TechnologyStackList :techList="currentProject(id).toolsUsed" />
+      <TechnologyStackList :techList="currentProject(Number(id)).toolsUsed" />
     </div>
   </div>
 </template>
@@ -23,7 +23,7 @@
 import TechnologyStackList from "@/components/TechnologyStackList.vue";
 export default {
   props: {
-    id: Number,
+    id: String,
   },
   components: {
     TechnologyStackList,

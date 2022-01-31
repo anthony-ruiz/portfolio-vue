@@ -2,20 +2,23 @@
   <div>
     <v-img
       max-height="300"
-      :src="require(`../assets/${mylocation(id).BackgroundImage}`)"
+      :src="require(`../assets/${mylocation(Number(id)).BackgroundImage}`)"
     ></v-img>
     <div class="work-details -shadow">
       <div class="work-location-header">
-        <h1>{{ mylocation(id).CompanyName }}</h1>
+        <h1>{{ mylocation(Number(id)).CompanyName }}</h1>
         <h4>
           {{
-            "from " + mylocation(id).StartDate + " to " + mylocation(id).EndDate
+            "from " +
+            mylocation(Number(id)).StartDate +
+            " to " +
+            mylocation(Number(id)).EndDate
           }}
         </h4>
-        <h3>{{ mylocation(id).RoleTitle }}</h3>
+        <h3>{{ mylocation(Number(id)).RoleTitle }}</h3>
       </div>
-      <p>{{ mylocation(id).JobDescription }}</p>
-      <TechnologyStackList :techList="mylocation(id).TechnologyUsed" />
+      <p>{{ mylocation(Number(id)).JobDescription }}</p>
+      <TechnologyStackList :techList="mylocation(Number(id)).TechnologyUsed" />
     </div>
   </div>
 </template>
@@ -24,7 +27,7 @@
 import TechnologyStackList from "@/components/TechnologyStackList.vue";
 export default {
   props: {
-    id: Number,
+    id: String,
   },
   components: {
     TechnologyStackList,
