@@ -32,4 +32,7 @@ ul {
   grid-gap: 2rem;
   list-style-type: none;
 }
+h1 {
+  margin: 2rem;
+}
 </style>

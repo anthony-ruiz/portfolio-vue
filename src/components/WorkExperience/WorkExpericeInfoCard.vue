@@ -6,7 +6,7 @@
     <li class="info-card -shadow">
       <figure>
         <img
-          :src="require(`@/assets/${location.CompanyLogo}`)"
+          :src="require(`@/assets/company-logos/${location.CompanyLogo}`)"
           alt="Work Location Logo"
         />
         <figcaption>

@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <Profile />
     <WorkExperinceList />
     <ProjectList />
   </div>
@@ -8,10 +9,12 @@
 <script>
 import WorkExperinceList from "@/components/WorkExperience/WorkExperinceList.vue";
 import ProjectList from "@/components/Project/ProjectList.vue";
+import Profile from "@/components/Profile.vue";
 export default {
   components: {
     WorkExperinceList,
     ProjectList,
+    Profile,
   },
 };
 </script>

@@ -88,6 +88,14 @@ export default new Vuex.Store({
         gitHubLink: "https://github.com/anthony-ruiz/my-workout-tracker",
       },
     ],
+    userProfile: {
+      name: "Anthony Ruiz-Alatorre",
+      profilePicture: "profile-picture.jpg",
+      bio: "Hi, I am Anthony Ruiz-Alatorre. I am a hands-on Software Engineer with a background in developing systems aimed at increasing productivity and growth. Currently I am working at Abrigo working to provide Comunity Banks a system for their customers to complete loan applications entirely online.",
+      linkedIn: "https://www.linkedin.com/in/anthonyruizalatorre",
+      github: "https://github.com/anthony-ruiz",
+      email: "anthonyruizalatorre@outlook.com",
+    },
   },
   getters: {
     getWorkLocationById: (state) => (id) => {
