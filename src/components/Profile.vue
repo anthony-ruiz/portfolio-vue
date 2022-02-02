@@ -1,5 +1,5 @@
 <template>
-  <div class="Profile">
+  <div class="profileSection">
     <a :href="user.linkedIn">
       <img
         class="profilePicture"
@@ -23,6 +23,13 @@ export default {
 </script>
 
 <style scoped>
+.profileSection {
+  padding: 3rem;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  height: 100%;
+}
 img {
   margin: 1rem;
   align-self: center;
@@ -38,9 +45,5 @@ img:hover {
 }
 h1 {
   margin: 1rem;
-}
-.Profile {
-  margin: auto;
-  width: 90%;
 }
 </style>

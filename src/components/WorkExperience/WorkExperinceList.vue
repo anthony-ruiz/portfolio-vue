@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="WorkExperienceSection">
     <h1>Work Experience:</h1>
     <ul>
       <WorkExperieceInfoCard
@@ -21,7 +21,13 @@ export default {
 </script>
 
 <style scoped>
-/* this is for the grid of work Locations */
+.WorkExperienceSection {
+  background-color: --main-bg-color;
+  padding: 2rem 5rem 2rem;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
 ul {
   margin-left: auto;
   margin-right: auto;
@@ -33,6 +39,6 @@ ul {
   list-style-type: none;
 }
 h1 {
-  margin: 2rem;
+  padding-bottom: 2rem;
 }
 </style>

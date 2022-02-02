@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ProjectsSection">
     <h1>Projects:</h1>
     <div class="project-grid">
       <ProjectInfoCard
@@ -21,6 +21,12 @@ export default {
 </script>
 
 <style scoped>
+.ProjectsSection {
+  padding: 2rem 5rem 2rem;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 0.5rem;
+}
 .project-grid {
   display: grid;
   grid-gap: 2rem;
