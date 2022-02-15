@@ -1,7 +1,13 @@
 /* eslint-disable prettier/prettier */
 <template>
   <div class="bar">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar
+      toggleable="lg"
+      type="dark"
+      variant="dark"
+      class="header"
+      fixed="top"
+    >
       <b-navbar-brand class="event-link" :to="{ name: 'Home' }"
         >Anthony Ruiz-Alatorre</b-navbar-brand
       >
@@ -9,11 +15,10 @@
 
       <b-collapse id="nav-collapse" is-nav right>
         <b-navbar-nav class="right">
-          <b-nav-item :to="{ name: 'About' }">About</b-nav-item>
-          <b-nav-item :to="{ name: 'WorkExperince' }"
-            >Work Experience</b-nav-item
-          >
-          <b-nav-item href="#">Education</b-nav-item>
+          <b-nav-item href="/#profile">About</b-nav-item>
+          <b-nav-item href="/#work-experience">Work Experience</b-nav-item>
+          <b-nav-item href="/#projects">Projects</b-nav-item>
+          <b-nav-item href="/#contact">Contact</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -24,11 +29,14 @@
 export default {
   links: [
     { id: 0, name: "Home", path: "/" },
-    { id: 0, name: "About", path: "/About" },
+    // { id: 1, name: "HomeAbout", path: "/#profile" },
   ],
 };
 </script>
 <style scoped>
+.navbar.navbar-dark.bg-dark {
+  background-color: #ac7b4a !important;
+}
 .event-link {
   margin-left: 1rem;
 }

@@ -12,8 +12,8 @@ export default new Vuex.Store({
         CompanyLogo: "newport-news-shipbuilding-logo.svg",
         BackgroundImage: "nns-background.jpg",
         CompanyName: "Newport News Shipbuilding",
-        StartDate: "2019-08-05",
-        EndDate: "2020-02-26",
+        StartDate: "August 5, 2019",
+        EndDate: "February 26, 2020",
         RoleTitle: "Business Technology Programmer",
         JobDescription:
           "Contributed to all phases of Database Application Development. Developed new features and reports for a multitude of internal databases. Lead and designed an internal development tool to log, backup, and compact legacy DB files due to file size limitations. Co-lead the development of a codebase that helped enhance the standardization of code used in over 200 distinct databases. Provided direct support to customers that experienced issues with Database Applications.",
@@ -25,11 +25,11 @@ export default new Vuex.Store({
         CompanyLogo: "abrigo-logo.svg",
         BackgroundImage: "abrigo-background.jpg",
         CompanyName: "Abrigo",
-        StartDate: "2019-08-05",
+        StartDate: "May 8, 2020",
         EndDate: "Current",
         RoleTitle: "Software Engineer II",
         JobDescription:
-          "Contributed to all phases of Database Application Development. Developed new features and reports for a multitude of internal databases. Lead and designed an internal development tool to log, backup, and compact legacy DB files due to file size limitations. Co-lead the development of a codebase that helped enhance the standardization of code used in over 200 distinct databases. Provided direct support to customers that experienced issues with Database Applications.",
+          'Helped to develop "Online Portal" a tool that integrates with banks systems across the US and allows end-users to submit business and personal loans entirely online. Designed implementation plan for new features from Specs created by Product Managers. I also Implemented and tested a multitude of new features and fixed bugs across multiple products utilizing a variety of tools and Programing languages.',
         TechnologyUsed: [
           "Typescript",
           "Vue",
@@ -91,7 +91,7 @@ export default new Vuex.Store({
     userProfile: {
       name: "Anthony Ruiz-Alatorre",
       profilePicture: "profile-picture.jpg",
-      bio: "Hi, I am Anthony Ruiz-Alatorre. I am a hands-on Software Engineer with a background in developing systems aimed at increasing productivity and growth. Currently I am working at Abrigo working to provide Comunity Banks a system for their customers to complete loan applications entirely online.",
+      bio: "Hi, I am Anthony Ruiz-Alatorre. I am a full-stack Software Engineer with a background in developing systems aimed at increasing productivity and growth. Currently I am working at Abrigo working to provide Comunity Banks a system for their customers to complete loan applications entirely online. Previously I worked at Newport News Shipbuilding and was involved in all phases of Database Application Development, providing tools that allowed the workforce become more efficient.",
       linkedIn: "https://www.linkedin.com/in/anthonyruizalatorre",
       github: "https://github.com/anthony-ruiz",
       email: "anthonyruizalatorre@outlook.com",

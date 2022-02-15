@@ -7,14 +7,13 @@
     <div class="work-details -shadow">
       <div class="work-location-header">
         <h1>{{ mylocation(Number(id)).CompanyName }}</h1>
-        <h4>
+        <h5>
           {{
-            "from " +
             mylocation(Number(id)).StartDate +
-            " to " +
+            " - " +
             mylocation(Number(id)).EndDate
           }}
-        </h4>
+        </h5>
         <h3>{{ mylocation(Number(id)).RoleTitle }}</h3>
       </div>
       <p>{{ mylocation(Number(id)).JobDescription }}</p>
@@ -53,5 +52,8 @@ export default {
 .work-location-header {
   text-align: center;
   padding-bottom: 1rem;
+}
+h3 {
+  padding: 1rem;
 }
 </style>

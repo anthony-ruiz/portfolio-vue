@@ -24,12 +24,13 @@ export default {
 
 <style scoped>
 .profileSection {
-  padding: 3rem;
+  padding: 5rem 5rem 0rem 5rem;
   text-align: center;
   margin: auto;
   width: 90%;
   height: 100%;
 }
+
 img {
   margin: 1rem;
   align-self: center;
@@ -37,6 +38,7 @@ img {
   width: 40%;
   min-width: 230px;
   max-width: 280px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 img:hover {

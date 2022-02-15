@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  padding-top: 2rem;
+}
 .ProjectsSection {
   padding: 2rem 5rem 2rem;
   text-align: center;

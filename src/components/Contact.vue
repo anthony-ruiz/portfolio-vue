@@ -2,9 +2,9 @@
   <div class="contact-form">
     <h1>Let's Connect!</h1>
     <h4>
-      You can find me at
-      <a :href="user.github">GitHub</a> and
-      <a :href="user.linkedIn">LinkedIn</a>.
+      You can find me on
+      <b-link :href="user.github">GitHub</b-link> and
+      <b-link :href="user.linkedIn">LinkedIn</b-link>.
     </h4>
     <div id="mail-icon">
       <a href="mailto:anthonyruizalatorre@outlook.com">

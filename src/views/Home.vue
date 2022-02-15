@@ -1,10 +1,10 @@
 <template>
   <div class="home">
-    <SplashScreen />
-    <Profile />
-    <WorkExperinceList />
-    <ProjectList />
-    <Contact />
+    <div id="splash-screen"><SplashScreen /></div>
+    <div id="profile"><Profile /></div>
+    <div id="work-experience"><WorkExperinceList /></div>
+    <div id="projects"><ProjectList /></div>
+    <div id="contact"><Contact /></div>
   </div>
 </template>
 

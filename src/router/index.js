@@ -44,7 +44,11 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes,
   scrollBehavior(to, from, savedPosition) {
-    if (savedPosition) {
+    if (to.hash) {
+      return {
+        selector: to.hash,
+      };
+    } else if (savedPosition) {
       return savedPosition;
     } else {
       return { x: 0, y: 0 };

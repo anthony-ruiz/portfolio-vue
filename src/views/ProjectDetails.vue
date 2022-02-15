@@ -53,6 +53,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 7rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 }
 img:hover {
   transform: scale(1.01);

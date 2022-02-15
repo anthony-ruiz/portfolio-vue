@@ -23,7 +23,7 @@ export default {
 <style scoped>
 .WorkExperienceSection {
   background-color: --main-bg-color;
-  padding: 2rem 5rem 2rem;
+  padding: 2rem 5rem 1rem;
   text-align: center;
   margin: 1rem;
   border-radius: 0.5rem;
@@ -39,6 +39,7 @@ ul {
   list-style-type: none;
 }
 h1 {
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 </style>
