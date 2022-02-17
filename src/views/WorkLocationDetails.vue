@@ -45,15 +45,24 @@ export default {
   border: 1px solid #e2e2e2;
   border-radius: 0.5rem;
   margin: 50px auto 50px auto;
-  width: 70%;
+  width: 80%;
   position: relative;
-  padding: 1rem;
 }
+
+@media (min-width: 720px) {
+  .work-details {
+    width: 70%;
+  }
+}
+
 .work-location-header {
   text-align: center;
   padding-bottom: 1rem;
 }
 h3 {
+  padding: 1rem;
+}
+p {
   padding: 1rem;
 }
 </style>

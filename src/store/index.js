@@ -9,19 +9,6 @@ export default new Vuex.Store({
       {
         id: 1,
         type: "Work Location",
-        CompanyLogo: "newport-news-shipbuilding-logo.svg",
-        BackgroundImage: "nns-background.jpg",
-        CompanyName: "Newport News Shipbuilding",
-        StartDate: "August 5, 2019",
-        EndDate: "February 26, 2020",
-        RoleTitle: "Business Technology Programmer",
-        JobDescription:
-          "Contributed to all phases of Database Application Development. Developed new features and reports for a multitude of internal databases. Lead and designed an internal development tool to log, backup, and compact legacy DB files due to file size limitations. Co-lead the development of a codebase that helped enhance the standardization of code used in over 200 distinct databases. Provided direct support to customers that experienced issues with Database Applications.",
-        TechnologyUsed: ["Visual Basic", "Git", "Access", "SQL"],
-      },
-      {
-        id: 2,
-        type: "Work Location",
         CompanyLogo: "abrigo-logo.svg",
         BackgroundImage: "abrigo-background.jpg",
         CompanyName: "Abrigo",
@@ -40,6 +27,19 @@ export default new Vuex.Store({
           "Git",
           "Atlassian Suite",
         ],
+      },
+      {
+        id: 2,
+        type: "Work Location",
+        CompanyLogo: "newport-news-shipbuilding-logo.svg",
+        BackgroundImage: "nns-background.jpg",
+        CompanyName: "Newport News Shipbuilding",
+        StartDate: "August 5, 2019",
+        EndDate: "February 26, 2020",
+        RoleTitle: "Business Technology Programmer",
+        JobDescription:
+          "Contributed to all phases of Database Application Development. Developed new features and reports for a multitude of internal databases. Lead and designed an internal development tool to log, backup, and compact legacy DB files due to file size limitations. Co-lead the development of a codebase that helped enhance the standardization of code used in over 200 distinct databases. Provided direct support to customers that experienced issues with Database Applications.",
+        TechnologyUsed: ["Visual Basic", "Git", "Access", "SQL"],
       },
     ],
     projects: [

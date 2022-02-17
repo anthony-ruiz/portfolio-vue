@@ -24,7 +24,7 @@ export default {
 
 <style scoped>
 .profileSection {
-  padding: 5rem 5rem 0rem 5rem;
+  padding: 5rem 2rem 0rem 2rem;
   text-align: center;
   margin: auto;
   width: 90%;
@@ -32,11 +32,10 @@ export default {
 }
 
 img {
-  margin: 1rem;
   align-self: center;
   border-radius: 50%;
   width: 40%;
-  min-width: 230px;
+  min-width: 200px;
   max-width: 280px;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -46,6 +45,6 @@ img:hover {
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2), 0 1px 15px 0 rgba(0, 0, 0, 0.19);
 }
 h1 {
-  margin: 1rem;
+  margin: 2rem;
 }
 </style>

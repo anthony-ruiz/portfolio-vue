@@ -32,6 +32,7 @@ export default {
 <style scoped>
 .contact-form {
   text-align: center;
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 

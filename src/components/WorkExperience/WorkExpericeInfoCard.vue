@@ -14,7 +14,7 @@
         </figcaption>
       </figure>
       <h4>{{ location.RoleTitle }}</h4>
-      <h5>{{ "from " + location.StartDate + " to " + location.EndDate }}</h5>
+      <h6>{{ "from " + location.StartDate + " to " + location.EndDate }}</h6>
     </li>
   </router-link>
 </template>

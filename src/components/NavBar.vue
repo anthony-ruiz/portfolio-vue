@@ -27,10 +27,7 @@
 
 <script>
 export default {
-  links: [
-    { id: 0, name: "Home", path: "/" },
-    // { id: 1, name: "HomeAbout", path: "/#profile" },
-  ],
+  links: [{ id: 0, name: "Home", path: "/" }],
 };
 </script>
 <style scoped>

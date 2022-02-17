@@ -21,11 +21,11 @@ export default {
 
 <style scoped>
 .SpashScreenPicture {
-  max-height: 100vh;
+  height: 100vh;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
 }
 
 .SpahScreenTitle {
@@ -34,8 +34,8 @@ export default {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: max-content;
-  font-size: calc(40px + 3vw);
+  /* width: max-content; */
+  font-size: min(10vh, 20vh);
   color: white;
 }
 </style>

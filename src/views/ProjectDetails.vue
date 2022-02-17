@@ -6,7 +6,7 @@
         require(`../assets/projects/${currentProject(Number(id)).imageBanner}`)
       "
     ></v-img>
-    <div class="work-detials -shadow">
+    <div class="project-details -shadow">
       <h1>{{ currentProject(Number(id)).name }}</h1>
       <p>{{ currentProject(Number(id)).description }}</p>
       <a :href="currentProject(Number(id)).gitHubLink">
@@ -39,14 +39,19 @@ export default {
 </script>
 
 <style scoped>
-.work-detials {
+.project-details {
   display: block;
   border: 1px solid #e2e2e2;
   border-radius: 0.5rem;
   margin: 50px auto 50px auto;
-  width: 70%;
-  padding: 3rem;
+  width: 80%;
   position: relative;
+}
+
+@media (min-width: 720px) {
+  .project-details {
+    width: 70%;
+  }
 }
 img {
   display: block;
@@ -63,5 +68,9 @@ img:hover {
 }
 h1 {
   text-align: center;
+  padding-bottom: 1rem;
+}
+p {
+  padding: 1rem;
 }
 </style>
