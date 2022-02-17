@@ -33,6 +33,3 @@ Here are some screenshots:
 
 ![Screenshot 1](https://i.imgur.com/0dynrqO.png "Mobile About Me")
 ![Screenshot 1](https://i.imgur.com/rr86f73.png "Mobile Work Details")
-
-
-
