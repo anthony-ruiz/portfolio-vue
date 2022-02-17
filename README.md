@@ -4,7 +4,7 @@ This is a Portfolio website that was done using Vue
 It contains work Experience, Projects and Contact information. 
 
 Live site: 
-[anthonyruiz.dev](https://anthony-ruiz.github.io/portfolio/)
+[anthonyruiz.dev](https://www.anthonyruiz.dev/)
 
 
 ## Tools used:
@@ -33,6 +33,3 @@ Here are some screenshots:
 
 ![Screenshot 1](https://i.imgur.com/0dynrqO.png "Mobile About Me")
 ![Screenshot 1](https://i.imgur.com/rr86f73.png "Mobile Work Details")
-
-
-

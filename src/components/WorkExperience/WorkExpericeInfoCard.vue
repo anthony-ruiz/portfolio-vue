@@ -9,9 +9,6 @@
           :src="require(`@/assets/company-logos/${location.CompanyLogo}`)"
           alt="Work Location Logo"
         />
-        <figcaption>
-          <h3>{{ location.CompanyName }}</h3>
-        </figcaption>
       </figure>
       <h4>{{ location.RoleTitle }}</h4>
       <h6>{{ "from " + location.StartDate + " to " + location.EndDate }}</h6>
@@ -48,13 +45,6 @@ export default {
 }
 
 .info-card figure img {
-  width: 100%;
-}
-
-.info-card figure figcaption {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
 }
 

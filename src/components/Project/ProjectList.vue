@@ -22,7 +22,8 @@ export default {
 
 <style scoped>
 h1 {
-  padding-top: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 .ProjectsSection {
   padding: 2rem 5rem 2rem;

@@ -24,6 +24,11 @@ const routes = [
     component: ProjectDetails,
     props: true,
   },
+  {
+    path: "/portfolio-vue/",
+    name: "Home",
+    component: Home,
+  },
 ];
 
 const router = new VueRouter({
