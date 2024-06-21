@@ -14,7 +14,7 @@ export default new Vuex.Store({
         CompanyName: "Abrigo",
         StartDate: "May 8, 2020",
         EndDate: "Current",
-        RoleTitle: "Software Engineer II",
+        RoleTitle: "Senior Software Engineer",
         JobDescription:
           'Helped to develop "Online Portal" a tool that integrates with banks systems across the US and allows end-users to submit business and personal loans entirely online. Designed implementation plan for new features from Specs created by Product Managers. I also Implemented and tested a multitude of new features and fixed bugs across multiple products utilizing a variety of tools and Programing languages.',
         TechnologyUsed: [
